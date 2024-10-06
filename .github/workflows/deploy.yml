@@ -22,4 +22,4 @@ jobs:
         run: npm install
 
       - name: Deploy to Surge
-        run: surge ./carlos-elena-p1.surge.sh ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
